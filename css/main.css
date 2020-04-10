@@ -3,5 +3,98 @@ html{
     background-size: 100%;
 }
 
+#infiniteNutritionDiv{
+    margin: 25px 50px 0px 50px;
+}
+
+#infiniteNutritionDiv2{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#nutritionLogoDiv{
+    display: block; 
+    font-size: 3rem;
+}
+
+.mainDivText{
+    font-size: 2rem;
+    margin: 0;
+}
+
+#inputStyle{
+    height: 25px; 
+    width: 250px; 
+    border-width: 0; 
+    border-radius: 5px;
+}
+
+#buttonStyle{
+    width: 80px; 
+    height: 20px; 
+    border-width: 0; 
+    border-radius: 15px; 
+    margin-top: 10px;
+}
+
+#foodTrackingDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 350px 50px 0px 50px;
+}
+
+#foodTrackingDiv2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#infiniteText{
+    display: inline; 
+    color: blue;
+}
+
+#nutritionText{
+    display: inline; 
+    color: grey
+}
+
+#foodTrackingIcon{
+    height: auto; 
+    width: 100px; 
+    padding-right: 20px;
+}
+
+.infoTitles{
+    font-size: 3rem;
+}
+
+.trackingInfoText{
+    margin: 0px 0px 20px 122px;
+    font-size: 2rem;
+}
+.trackingInfoText:last-child{
+    margin-bottom: 0;
+}
+
+#phoneImage1{
+    position: relative;
+    width: 700px; 
+    margin: 0;
+    float: right;
+    top: -400px;
+    right: 350px;
+}
+
 
 
