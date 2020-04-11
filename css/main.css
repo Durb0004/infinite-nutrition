@@ -1,6 +1,16 @@
-html{
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+#mainDiv{
     background-image: url("../images/background.png");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5080px;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
 }
 
 #infiniteNutritionDiv{
@@ -51,6 +61,7 @@ html{
     display: flex;
     flex-direction: column;
     margin: 350px 50px 0px 50px;
+    height: auto;
 }
 
 #foodTrackingDiv2{
@@ -69,7 +80,7 @@ html{
     color: grey
 }
 
-#foodTrackingIcon{
+.icons{
     height: auto; 
     width: 100px; 
     padding-right: 20px;
@@ -79,7 +90,7 @@ html{
     font-size: 3rem;
 }
 
-.trackingInfoText{
+.infoText{
     margin: 0px 0px 20px 122px;
     font-size: 2rem;
 }
@@ -93,8 +104,73 @@ html{
     margin: 0;
     float: right;
     top: -400px;
-    right: 350px;
+    left: 700px;
 }
 
+#progressionDiv1{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row; width: auto; 
+    padding-right: 50px; 
+    position: relative; 
+    top: -500px;
+}
+
+#progressionDiv2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#phoneImage2{
+    position: relative;
+    width: 700px; 
+    margin: 0;
+    float: right;
+    top: -600px;
+    left: 200px;
+}
+
+#allTrackingDiv{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: -500px;
+    padding-left: 300px;
+}
+
+#phoneImage3{
+    position: relative;
+    width: 1400px; 
+    margin: 0;
+    float: right;
+    top: -650px;
+    left: 100px;
+}
+
+#clinicDiv{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: -400px;
+    padding-left: 50px;
+}
+
+#phoneImage4{
+    position: relative;
+    width: 400px; 
+    margin: 0;
+    float: right;
+    top: -500px;
+    left: 1000px;
+}
+
+#whoWeAreDiv{
+    margin-left: 50px;
+    position: relative;
+    top: -300px;
+    overflow: hidden;
+}
 
 
