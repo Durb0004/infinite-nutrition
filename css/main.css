@@ -7,14 +7,14 @@ html, body{
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 5080px;
+    height: auto;
     width: 100%;
     display: flex; 
     flex-direction: column;
 }
 
 #infiniteNutritionDiv{
-    margin: 25px 50px 0px 50px;
+    margin: 25px 100px 0px 100px;
 }
 
 #infiniteNutritionDiv2{
@@ -38,29 +38,38 @@ html, body{
 }
 
 .mainDivText{
-    font-size: 2rem;
+    font-size: 2.8rem;
     margin: 0;
+    padding: 0;
 }
 
 #inputStyle{
-    height: 25px; 
-    width: 250px; 
+    padding-left: 5px;
+    height: 40px; 
+    width: 400px; 
     border-width: 0; 
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
 }
 
 #buttonStyle{
-    width: 80px; 
-    height: 20px; 
+    width: 100px; 
+    height: 30px; 
     border-width: 0; 
     border-radius: 15px; 
     margin-top: 10px;
+    font-size: 15px;
+}
+
+#buttonStyle:hover{
+    background-color: #F7941F;
+    color: #fff;
 }
 
 #foodTrackingDiv{
     display: flex;
     flex-direction: column;
-    margin: 350px 50px 0px 50px;
+    margin: 350px 100px 0px 100px;
     height: auto;
 }
 
@@ -112,7 +121,8 @@ html, body{
     justify-content: space-between; 
     align-items: center; 
     flex-direction: row; width: auto; 
-    padding-right: 50px; 
+    padding-right: 100px;
+    margin: 0; 
     position: relative; 
     top: -500px;
 }
@@ -153,8 +163,8 @@ html, body{
     display: flex;
     position: relative;
     flex-direction: column;
-    top: -400px;
-    padding-left: 50px;
+    top: -300px;
+    padding-left: 100px;
 }
 
 #phoneImage4{
@@ -162,15 +172,19 @@ html, body{
     width: 400px; 
     margin: 0;
     float: right;
-    top: -500px;
-    left: 1000px;
+    top: -600px;
+    left: 1150px;
 }
 
 #whoWeAreDiv{
-    margin-left: 50px;
+    margin-left: 100px;
     position: relative;
-    top: -300px;
-    overflow: hidden;
+    top: -400px;
+    margin-bottom: 5px;
 }
+
+.fade {
+    opacity: 1;
+  }
 
 

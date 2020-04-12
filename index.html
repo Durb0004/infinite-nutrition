@@ -15,7 +15,7 @@
             <div id="nutritionLogoDiv">
                 <h1 id="infiniteText">Infinite</h1><h1 id="nutritionText">Nutrition</h1>
             </div>
-            <img src="./poster_assets/infinite-studios-logo 10.07.20 AM.png" alt="infinite Studio Logo" style="width: 200px;">
+            <img src="./poster_assets/infinite-studios-logo.png" alt="infinite Studio Logo" style="width: 200px;">
         </div>
 
         <p class="mainDivText">Weight loss doesn’t need to be difficult</p>
@@ -23,17 +23,17 @@
 
         <div id="infiniteNutritionDiv2">
             <div style="display: flex; flex-direction: column;">
-                <h1 style="margin: 0; color: blue">Be the first to know!</h1>
+                <h1 style="margin: 0; color: blue; font-size: 2.8rem;">Be the first to know!</h1>
                 <p>Sign up for your e-newsletter today</p>
                 <input id="inputStyle">
                 <button id="buttonStyle">Join Us</button>
             </div>
-
             <img src="./poster_assets/video-placeholder.jpg" alt="video place holder" style="width: 600px;">
+        
         </div>
     </div>
 
-    <div id="foodTrackingDiv">
+    <div class="fade" id="foodTrackingDiv">
         <div id="foodTrackingDiv2">
             <img src="./poster_assets/food-track-icon.png" alt="fork and knife" class="icons">
             <h1 class="infoTitles">Streamedlined Food Tracking</h1>
@@ -43,10 +43,11 @@
         <p class="infoText">Add to favorites for quick refrence</p>
         <p class="infoText">Add portions right from the homescreen </p>
     </div>
-    <img id="phoneImage1" src="./poster_assets/17DCD60C91F9811D.png" alt="visual representation of app on an iphone xs">
+        <img id="phoneImage1" src="./poster_assets/17DCD60C91F9811D.png" alt="visual representation of app on an iphone xs">
+ 
 
 
-    <div id="progressionDiv1">
+    <div class="fade" id="progressionDiv1">
         <div></div>
         <div>
             <div id="progressionDiv2">
@@ -61,7 +62,7 @@
     </div>
     <img src="./poster_assets/visuals.png" id="phoneImage2" alt="visual representation of app on an iphone xs">
 
-    <div id="allTrackingDiv">
+    <div class="fade" id="allTrackingDiv">
         <div id="foodTrackingDiv2">
         <img src="./poster_assets/puzzle-icon.png" class="icons" alt="puzzle icon">
         <h1 class="infoTitles">All your tracking in one place</h1>
@@ -72,7 +73,7 @@
     </div>
     <img src="./poster_assets/resultOfAppIcon.png" alt="visual representation of app on an iphone xs" id="phoneImage3">
 
-    <div id="clinicDiv">
+    <div class="fade" id="clinicDiv">
         <div id="foodTrackingDiv2">
             <img src="./poster_assets/dash.png" alt="icon of a laptop" class="icons">
             <h1 class="infoTitles">Clinic Dashboard</h1>
@@ -84,13 +85,36 @@
     </div>
     <img src="./poster_assets/deskmock.png" alt="picture of a macbook" id="phoneImage4">
 
-    <div id="whoWeAreDiv">
-        <h1 class="infoTitles">Who We Are</h1>
-        <p class="infoText" style="margin: 0">We are an Ottawa based development team who are going<br />
-            to turn the food tracking industry around by simplifying tracking<br />
-            while making it possible for weight loss clinics to follow their patients in a single app.</p>
+  
+        <div class="fade" id="whoWeAreDiv">
+            <h1 class="infoTitles">Who We Are</h1>
+            <p class="infoText" style="margin: 0">We are an Ottawa based development team who are going<br />
+                to turn the food tracking industry around by simplifying tracking<br />
+                while making it possible for weight loss clinics to follow their patients in a single app.</p>
+        </div>
     </div>
-    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load",function() {
+        $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fade").each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(800,1);}
+            } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {$(this).fadeTo(800,0);}
+            }
+            });
+        }).scroll(); //invoke scroll-handler on page-load
+        });
+    </script>
+
+    <div>
 </body>
 
 </html>
