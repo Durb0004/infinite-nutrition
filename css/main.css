@@ -130,7 +130,8 @@ html, body{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    flex-direction: row; width: auto; 
+    flex-direction: row; 
+    width: auto; 
     padding-right: 100px;
     margin: 0; 
     position: relative; 
@@ -198,3 +199,112 @@ html, body{
   }
 
 
+
+
+  @media only screen and (max-width: 1570px) {
+      #whoWeAreDiv{
+          background-color: red;
+      }
+
+      #clinicDiv{
+          padding-right: 600px;
+      }
+
+      #allTrackingDiv{
+          padding-right: 200px;
+      }
+
+      #phoneImage3{
+        width: 1300px;
+        left: 150px;
+      }
+      
+      #phoneImage4{
+        transform: translate(-45%, -20%);
+      }
+    }
+
+    @media only screen and (max-width: 1453px){
+        #whoWeAreDiv{
+            background-color: green;
+        }
+
+        #phoneImage1{
+            transform: scale(.7,.7);
+        }
+
+        #phoneImage2{
+            transform: scale(.7,.7);
+        }
+
+        #phoneImage3{
+            max-width: 1300px;
+            transform: scale(.7,.7);
+            left: 150px;
+        }
+
+        #phoneImage4{
+            transform: scale(.9,.9)translate(-65%, -40%);
+        }
+    }
+
+    @media only screen and (max-width: 1350px){
+        #mainDiv{
+            background-image: none;
+            background-color: #E9E5E5;
+        }
+
+        #whoWeAreDiv{
+            background-color: purple;
+        }
+
+        #clinicDiv{
+            padding-right: 0px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 100px 0px 100px;
+            height: auto;
+            align-items: center;
+        }
+
+        #foodTrackingDiv{
+            align-items: center;
+        }
+
+        #progressionDiv1{
+            padding-right: 0px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 100px 0px 100px;
+            height: auto;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        #allTrackingDiv{
+            padding-left: 0px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 100px 0px 100px;
+            height: auto;
+            align-items: center;
+        }
+
+        #whoWeAreDiv{
+            padding-left: 0px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 100px 0px 100px;
+            height: auto;
+            align-items: center;
+        }
+
+        #phoneImage1, #phoneImage2, #phoneImage3, #phoneImage4{
+            display: none;
+        }
+    }
