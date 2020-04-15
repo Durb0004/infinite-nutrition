@@ -396,6 +396,7 @@ body {
 
     #inputHeader {
         font-size: 2rem;
+        padding-top: 15px;
     }
 
     #inputStyle {
@@ -448,7 +449,7 @@ body {
         width: auto;
         padding-right: 0px;
         top: 0;
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px grey;
         padding-bottom: 40px;
     }
 
@@ -462,7 +463,7 @@ body {
         flex-direction: column;
         font-size: 1rem;
         align-items: stretch;
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px grey;
         padding-bottom: 40px;
     }
 
@@ -476,7 +477,7 @@ body {
         justify-content: flex-start;
         flex-direction: column;
         position: static;
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px grey;
         padding-bottom: 40px;
     }
 
@@ -501,7 +502,7 @@ body {
         justify-content: flex-start;
         flex-direction: column;
         position: static;
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px grey;
         padding-bottom: 40px;
     }
 
@@ -515,5 +516,6 @@ body {
         margin: 0;
         padding-bottom: 25px;
         font-family: 'Ubuntu', sans-serif;
+        text-align: center;
     }
 }
