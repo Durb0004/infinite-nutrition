@@ -1,32 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu:ital,wght@0,400;1,700&display=swap');
 
-html, body{
+html,
+body {
     height: 100%;
     margin: 0;
 }
 
-#mainDiv{
+#mainDiv {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
     width: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
+    padding-top: 50px;
 }
 
-#infiniteNutritionDiv{
+#inputHeader {
+    margin: 0;
+    color: blue;
+    font-size: 2.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#infiniteStudioLogo {
+    width: 200px;
+}
+
+#infiniteNutritionDiv {
     margin: 25px 100px 0px 100px;
 }
 
-#infiniteNutritionDiv2{
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
+#infiniteNutritionDiv2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
-#header{
+#header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,160 +47,168 @@ html, body{
     margin-bottom: 20px;
 }
 
-#nutritionLogoDiv{
-    display: block; 
+#nutritionLogoDiv {
+    display: block;
     font-size: 3rem;
 }
 
-.mainDivText{
+.mainDivText {
     font-size: 2.8rem;
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 25px;
 }
 
-#inputStyle{
+#inputStyle {
     padding-left: 5px;
-    height: 40px; 
-    width: 400px; 
-    border-width: 0; 
+    height: 40px;
+    width: 400px;
+    border-width: 0;
     border-radius: 10px;
     font-size: 1rem;
 }
 
-#buttonStyle{
-    width: 100px; 
-    height: 30px; 
-    border-width: 0; 
-    border-radius: 15px; 
+#buttonStyle {
+    width: 100px;
+    height: 30px;
+    border-width: 0;
+    border-radius: 15px;
     margin-top: 10px;
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-#buttonStyle:hover{
+#buttonStyle:hover {
     background-color: #F7941F;
     color: #fff;
 }
 
-#foodTrackingDiv{
+#foodTrackingDiv {
     display: flex;
     flex-direction: column;
     margin: 350px 100px 0px 100px;
     height: auto;
 }
 
-#foodTrackingDiv2{
+#foodTrackingDiv2 {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#infiniteText{
-    display: inline; 
+#infiniteText {
+    display: inline;
     color: blue;
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
 }
 
-#nutritionText{
-    display: inline; 
+#nutritionText {
+    display: inline;
     color: grey;
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
 }
 
-.icons{
-    height: auto; 
-    width: 100px; 
+.icons {
+    height: auto;
+    width: 100px;
     padding-right: 20px;
 }
 
-.infoTitles{
+.infoTitles {
     font-size: 3rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.infoText{
+.infoText {
     margin: 0px 0px 20px 122px;
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
 }
-.trackingInfoText:last-child{
+
+.trackingInfoText:last-child {
     margin-bottom: 0;
 }
 
-#phoneImage1{
+#videoImage {
+    width: 600px;
+}
+
+#phoneImage1 {
     position: relative;
-    width: 700px; 
+    width: 700px;
     margin: 0;
     float: right;
     top: -400px;
     left: 700px;
 }
 
-#progressionDiv1{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    flex-direction: row; 
-    width: auto; 
+#progressionDiv1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
     padding-right: 100px;
-    margin: 0; 
-    position: relative; 
+    margin: 0;
+    position: relative;
     top: -500px;
 }
 
-#progressionDiv2{
+#progressionDiv2 {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#phoneImage2{
+#phoneImage2 {
     position: relative;
-    width: 700px; 
+    width: 700px;
     margin: 0;
     float: right;
     top: -600px;
     left: 200px;
 }
 
-#allTrackingDiv{
+#allTrackingDiv {
     display: flex;
     position: relative;
     flex-direction: column;
     top: -500px;
     padding-left: 300px;
+    width: 780px;
 }
 
-#phoneImage3{
+#phoneImage3 {
     position: relative;
-    width: 1400px; 
+    width: 1400px;
     margin: 0;
     float: right;
     top: -650px;
     left: 100px;
 }
 
-#clinicDiv{
+#clinicDiv {
     display: flex;
     position: relative;
     flex-direction: column;
     top: -300px;
     padding-left: 100px;
+    width: 1000px
 }
 
-#phoneImage4{
+#phoneImage4 {
     position: relative;
-    width: 400px; 
+    width: 400px;
     margin: 0;
     float: right;
     top: -600px;
     left: 1150px;
 }
 
-#whoWeAreDiv{
+#whoWeAreDiv {
     margin-left: 100px;
     position: relative;
     top: -400px;
@@ -196,115 +217,303 @@ html, body{
 
 .fade {
     opacity: 1;
-  }
+}
 
 
 
 
-  @media only screen and (max-width: 1570px) {
-      #whoWeAreDiv{
-          background-color: red;
-      }
+@media only screen and (max-width: 1570px) {
 
-      #clinicDiv{
-          padding-right: 600px;
-      }
+    #clinicDiv {
+        padding-right: 600px;
+        width: auto
+    }
 
-      #allTrackingDiv{
-          padding-right: 200px;
-      }
+    #allTrackingDiv {
+        padding-right: 200px;
+        width: 750px;
+    }
 
-      #phoneImage3{
+    #phoneImage3 {
         width: 1300px;
         left: 150px;
-      }
-      
-      #phoneImage4{
+    }
+
+    #phoneImage4 {
         transform: translate(-45%, -20%);
-      }
     }
 
-    @media only screen and (max-width: 1453px){
-        #whoWeAreDiv{
-            background-color: green;
-        }
+    .mainDivText {
+        font-size: 2.8rem;
+        margin: 0;
+        padding: 0;
+        font-family: 'Ubuntu', sans-serif;
+        padding-bottom: 25px;
+    }
+}
 
-        #phoneImage1{
-            transform: scale(.7,.7);
-        }
+@media only screen and (max-width: 1453px) {
 
-        #phoneImage2{
-            transform: scale(.7,.7);
-        }
-
-        #phoneImage3{
-            max-width: 1300px;
-            transform: scale(.7,.7);
-            left: 150px;
-        }
-
-        #phoneImage4{
-            transform: scale(.9,.9)translate(-65%, -40%);
-        }
+    #phoneImage1 {
+        transform: scale(.7, .7);
     }
 
-    @media only screen and (max-width: 1350px){
-        #mainDiv{
-            background-image: none;
-            background-color: #E9E5E5;
-        }
-
-        #whoWeAreDiv{
-            background-color: purple;
-        }
-
-        #clinicDiv{
-            padding-right: 0px;
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            margin: 0px 100px 0px 100px;
-            height: auto;
-            align-items: center;
-        }
-
-        #foodTrackingDiv{
-            align-items: center;
-        }
-
-        #progressionDiv1{
-            padding-right: 0px;
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            margin: 0px 100px 0px 100px;
-            height: auto;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: column;
-        }
-
-        #allTrackingDiv{
-            padding-left: 0px;
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            margin: 0px 100px 0px 100px;
-            height: auto;
-            align-items: center;
-        }
-
-        #whoWeAreDiv{
-            padding-left: 0px;
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            margin: 0px 100px 0px 100px;
-            height: auto;
-            align-items: center;
-        }
-
-        #phoneImage1, #phoneImage2, #phoneImage3, #phoneImage4{
-            display: none;
-        }
+    #phoneImage2 {
+        transform: scale(.7, .7);
     }
+
+    #phoneImage3 {
+        max-width: 1300px;
+        transform: scale(.7, .7);
+        left: 150px;
+    }
+
+    #phoneImage4 {
+        transform: scale(.9, .9)translate(-65%, -40%);
+    }
+
+    #allTrackingDiv {
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    #mainDiv {
+        background-image: none;
+        background-color: #E9E5E5;
+    }
+
+    #foodTrackingDiv {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 50px 50px 50px 50px;
+        align-items: stretch;
+        width: auto;
+        padding-right: 0px;
+        top: 0;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    #progressionDiv1 {
+        padding-right: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-size: 1rem;
+        align-items: stretch;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    #allTrackingDiv {
+        padding-left: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: static;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    #whoWeAreDiv {
+        padding-left: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: static;
+    }
+
+    #clinicDiv {
+        padding-right: 0px;
+        padding-left: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: static;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    #infiniteNutritionDiv {
+        margin: 0px 50px 50px 50px;
+    }
+
+    #videoImage {
+        width: 500px;
+    }
+
+    .infoText {
+        font-size: 1.5rem;
+    }
+
+    .infoTitles {
+        font-size: 2rem;
+    }
+
+    #phoneImage1,
+    #phoneImage2,
+    #phoneImage3,
+    #phoneImage4 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #videoImage {
+        width: 400px;
+    }
+
+    .mainDivText {
+        font-size: 2.8rem;
+        margin: 0;
+        padding: 0;
+        font-family: 'Ubuntu', sans-serif;
+        padding-bottom: 25px;
+    }
+
+    #infiniteStudioLogo {
+        width: 100px;
+    }
+
+    #infiniteText,
+    #nutritionText {
+        font-size: 4rem;
+    }
+
+    #inputHeader {
+        font-size: 2rem;
+    }
+
+    #inputStyle {
+        width: 300px;
+    }
+
+    .mainDivText {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        font-family: 'Ubuntu', sans-serif;
+        padding-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .infoTitles {
+        font-size: 1.8rem;
+    }
+
+    #infiniteText,
+    #nutritionText {
+        font-size: 2.5rem;
+    }
+
+    #infiniteStudioLogo {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .infoText {
+        font-size: 1rem;
+    }
+
+    #infiniteNutritionDiv2 {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #videoImage {
+        padding-top: 25px;
+    }
+
+    #foodTrackingDiv {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 50px 50px 50px 50px;
+        align-items: stretch;
+        width: auto;
+        padding-right: 0px;
+        top: 0;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    #progressionDiv1 {
+        padding-right: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-size: 1rem;
+        align-items: stretch;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    #allTrackingDiv {
+        padding-left: 0px;
+        padding-right: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: static;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    #whoWeAreDiv {
+        padding-left: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: static;
+    }
+
+    #clinicDiv {
+        padding-right: 0px;
+        padding-left: 0px;
+        top: 0;
+        display: flex;
+        margin: 0px 50px 50px 50px;
+        width: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: static;
+        border-bottom: solid 1px black;
+        padding-bottom: 40px;
+    }
+
+    .icons {
+        height: auto;
+        width: 80px;
+    }
+
+    .mainDivText {
+        font-size: 1.3rem;
+        margin: 0;
+        padding-bottom: 25px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
